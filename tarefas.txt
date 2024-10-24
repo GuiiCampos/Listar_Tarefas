@@ -1,4 +1,4 @@
 
-3:comer:concluido
-5:passear:concluido
+2:dormir:pendente
+3:comer:pendente
 #armazena dados de tarefas

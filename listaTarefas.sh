@@ -103,9 +103,12 @@ UpdateTarefa () { #Atualiza uma tarefa existente
 	if [[ "$(grep $1$SEP $ARQ_DB | cut -d $SEP -f 3)" = "pendente" ]]
 	then
 		sed -i "/$1$SEP/ s/pendente/concluido/" $ARQ_DB
-	else
-		sed -i "/$1$SEP/ s/concluida/pendente/" $ARQ_DB
 	fi
+	if [[ "$(grep $1$SEP $ARQ_DB | cut -d $SEP -f 3)" = "concluido" ]]	
+	then
+		sed -i "/$1$SEP/ s/concluido/pendente/" $ARQ_DB
+	fi
+
 }
 
 DeleteTarefa () { #Deleta uma tarefa
