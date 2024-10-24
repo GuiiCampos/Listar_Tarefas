@@ -1,32 +1,25 @@
 #!/usr/bin/env bash
 
-# listTarefas - Gerencia uma lista de tarefas.
-
-
-# Site:       https://list.com
+# listaTarefas - Gerencia uma lista de tarefas.
 
 # Autor:      Guilherme Campos
 
 # Manutenção:  Guilherme Campos
-
 
 # ------------------------------------------------------------------------ #
 
 # Um script que usa um arquivo de texto para gerenciar uma lista de tarefas.
 
 #  Detalhe:
-# 	Ainda não a persistencia de dados.
+# 	Não tem persistencia de dados.
 # 	Para ler as tarefas adicionadas, precisa obrigatoriamente passar os comandos -a -l
-# 	Funcionalidade delete ainda não disponivel 
 
 #  Exemplos:
 
-#      $ ./listTarefas.sh -a -l
-
-#      Neste exemplo o script vai adicionar algo a lista e mostrar a lista.
+#      ./listaTarefas.sh -a -l
+#      	   -Neste exemplo o script vai adicionar algo a lista e mostrar a lista.
 
 # ------------------------------------------------------------------------ #
-
 # Histórico:
 
 #
@@ -39,7 +32,6 @@
 #   	- adicionar e listar
 
 # ------------------------------------------------------------------------ #
-
 # Testado em:
 
 #   bash 5.2.21
@@ -55,7 +47,6 @@ HELP="
 TAREFAS=()
 ADD=0
 LIST=0
-#DELETE=0 #ainda não adicionado
 
 # ------------------------------- EXECUÇÃO ----------------------------------------- #
 
