@@ -1,0 +1,4 @@
+
+3:comer:concluido
+5:passear:concluido
+#armazena dados de tarefas
